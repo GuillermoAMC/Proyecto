@@ -16,34 +16,26 @@
 <body>
 <div class="fixed-header">
     <a href="/"><h1>Ir al Index</h1></a>
-<main class="Contenido">
-    <div class="Información">
+    <main class="Contenido">
+        <div class="User" id="User">
           <h2 class="Texto">Email &amp; Password Authentication</h2>
-    </div>
-        <div class="SubTexto">
+        </div>
+        <div class="SubTexto" id="SubTexto">
           <p>Introduzca un email y un password como indica aqui abajo y tambien Ingresa una cuenta existente o registrate</p>
 
             <div class="Log">
                 <input type="Email" id="email" placeholder="email@gmail.com">
                 <input type="Password" id="password" placeholder="contraseña">
-                <button class="SubTexto" onclick="application.SignIn()">Registrarse</button>
+                <button class="SubTexto" onclick="application.Registrar()">Registrarse</button>
             </div>
-          <button class="SubTexto" onclick="application.SignIn()" id="sign-in" name="signin">Sign In</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="SubTexto"  onclick="application.SignUp()" id="sign-up" name="signup">Sign Up</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="SubTexto"  disabled id="verify-email" name="verify-email">Enviar Email Verificacion</button>
-          &nbsp;&nbsp;&nbsp;
-          <button class="SubTexto" id="password-reset" name="verify-email">Enviar Password Reset Email</button>
-
-          <!-- Container where we'll display the user details -->
-          <div class="User-details">
-            Sign-in status: <span id="sign-in-status">Desconocido</span>
-            <div><code>Usuario Actual</code> valor:</div>
-            <pre><code id="account-details">null</code></pre>
-          </div>
-    </div>
-  </main>
+            &nbsp;
+                <button class="SubTexto"  onclick="application.Iniciar()" id="sign-up" name="signup">Inciar</button>
+            &nbsp;
+                <button class="SubTexto"  disabled id="verify-email" name="verify-email">Enviar Email Verificacion</button>
+            &nbsp;
+                <button class="SubTexto" id="password-reset" name="verify-email">Enviar Password Reset Email</button>
+        </div>
+    </main>
 </div>
 <script src="js/Google.js"></script>
 </body>
